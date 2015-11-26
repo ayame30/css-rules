@@ -1,0 +1,291 @@
+<html>
+<head>
+<style>
+html {
+   margin:0 ;
+   padding: 0;
+   width: 100%;
+}
+ body {
+   background: #eee;
+   margin: 50px 0 ;
+   width: 100%;
+   padding: 0;
+ }
+ span {
+   font-size: 12px;
+ }
+.content{
+   background: #fff;
+   position: relative;
+   background: #a9f1a5;
+   box-sizing: border-box;
+}
+.content >span{
+   display: inline-block;
+   background: #fff;
+   width: 100%;
+   min-height: 100px;
+ }
+.margin {
+  position: relative;
+   background: #fad690;
+   width: 100%;
+}
+.padding {
+  background: rgb(99, 208, 139);
+  height: 100px;
+  position: relative;
+  display: inline-block;
+}
+.arrow {
+  position: absolute;
+  height: 1px;
+  background: #990707;
+  width: 100%;
+  overflow: visible;
+  top: -10px;
+  left: 0;
+}
+.arrow:before {
+  content: '';
+  position: absolute;
+  border: 5px #990707 solid;
+  border-color: transparent #990707 transparent transparent;
+  border-left: none;
+  left: 0px;
+  top: -5px;
+}
+.arrow:after {
+  content: '';
+  position: absolute;
+  border: 5px #990707 solid;
+  border-color: transparent transparent transparent #990707;
+  border-right: none;
+  right: 0px;
+  top: -5px;
+}
+.arrow span {
+  position: absolute;
+  top: -15px;
+  display: block;
+  width: 100%;
+  min-width: 80px;
+  text-align: center;
+  color: #990707;
+  font-size: 11px;
+  background: #eee;
+  right: 0;
+}
+hr {
+  width: 40%;
+  margin: 50px auto;
+  border: none;
+  border-top: 1px #ddd solid;
+}
+.icon {
+  background: #eee;
+  border: #aaa 1px solid;
+  width: 80px;
+  height: 40px;
+  float: left;
+  padding: 5px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 40px;
+}
+.icon:before {
+  content: 'Logo Here';
+}
+.menu-icon {
+  float: right;
+  width: 20px;
+  height: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.menu-icon:before {
+  display: block;
+  content: '';
+  height: 2px;
+  width: 100%;
+  margin: 5px 0;
+  background: #ccc;
+
+}
+.menu-icon:after {
+  display: block;
+  content: '';
+  height: 2px;
+  width: 100%;
+  margin: 5px 0;
+  background: #ccc;
+}
+.option {
+  font-size: 11px;
+  display: inline-block;
+}
+.option .content {
+  background: #a9f1a5;
+  border: 1px #333 solid;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+  <h1>Text section</h1>
+  <hr>
+  <div class="margin">
+    <div class="arrow"><span>Width: 100%</span></div><span>
+    <div class="content">
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  </span></div></div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 60%;"><div class="arrow"><span>Width: 60%, Align: left</span></div>
+<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </span></div></div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 50%; margin: 0 auto;"><div class="arrow"><span>Width: 50%, Align: center</span></div><span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </span></div></div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 50%; margin: 0 auto; padding: 0 20px;">
+      <div class="arrow"><span>Width: 50%, Align: center</span></div>
+      <div class="arrow" style="width: 20px; top: 20px;"><span>Width: 20px</span></div>
+    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 100%; max-width: 500px; margin: 0 auto; ">
+      <div class="arrow"><span>Width: 500px, Align: center</span></div>
+    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 100%; max-width: 540px; margin: 0 auto;  padding: 0 20px;">
+      <div class="arrow"><span>Width: 540px, Align: center</span></div>
+      <div class="arrow" style="width: 20px; top: 20px;"><span>Width: 20px</span></div>
+    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+  </div>
+  <hr>
+  <h1>Header section</h1>
+  <hr>
+  <div class="margin">
+    <div class="arrow"><span>Width: 100%</span></div><span>
+    <div class="content">
+      <span> <div class="icon"></div> <div class="menu-icon"></div></span>
+    </div></div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 60%;"><div class="arrow"><span>Width: 60%, Align: left</span></div>
+<span><div class="icon"></div> <div class="menu-icon"></div>
+</span></div></div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 50%; margin: 0 auto;"><div class="arrow"><span>Width: 50%, Align: center</span></div><span>
+<div class="icon"></div> <div class="menu-icon"></div>  </span></div></div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 50%; margin: 0 auto; padding: 0 20px;">
+      <div class="arrow"><span>Width: 50%, Align: center</span></div>
+      <div class="arrow" style="width: 20px; top: 20px;"><span>Width: 20px</span></div>
+    <span>
+      <div class="icon"></div> <div class="menu-icon"></div></span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 100%; max-width: 500px; margin: 0 auto; ">
+      <div class="arrow"><span>Width: 500px, Align: center</span></div>
+    <span>
+      <div class="icon"></div> <div class="menu-icon"></div></span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="width: 100%; max-width: 540px; margin: 0 auto;  padding: 0 20px;">
+      <div class="arrow"><span>Width: 540px, Align: center</span></div>
+      <div class="arrow" style="width: 20px; top: 20px;"><span>Width: 20px</span></div>
+    <span><div class="icon"></div> <div class="menu-icon"></div></span></div>
+  </div>
+  <hr>
+  <h1>Menu section</h1>
+  <hr>
+  <style>
+  .content {
+    text-align: center;
+  }
+  .option .content span{
+        min-height: auto;
+        width: auto;
+  }
+  .option.margin {
+        width: auto;
+        background: #fad690;
+  }
+  .option .arrow span {
+    width: 100%;
+  }
+  </style>
+  <div class="margin">
+    <div class="content" style="margin: 0 auto; ">
+      <div class="arrow"><span>Width: 100%, Align: center</span></div>
+    <span>
+      <div class="option margin"><div class="content"><span>Option A</span></div></div><!--
+      --><div class="option margin"><div class="content"><span>Option BBBB</span></div></div><!--
+      --><div class="option margin"><div class="content"><span>Option CCCCCCCCC</span></div></div><!--
+      --><div class="option margin"><div class="content"><span>Option DDDDDD DDDD</span></div></div>
+    </span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="margin: 0 auto;  padding: 0 20px;">
+      <div class="arrow"><span>Width: 100%, Align: center</span></div>
+      <div class="arrow" style="width: 20px; top: 20px;"><span style="right: auto;">Width: 20px</span></div>
+    <span>
+      <div class="option margin"><div class="content"><span>Option A</span></div></div><!--
+      --><div class="option margin"><div class="content"><span>Option BBBB</span></div></div><!--
+      --><div class="option margin"><div class="content"><span>Option CCCCCCCCC</span></div></div><!--
+      --><div class="option margin"><div class="content"><span>Option DDDDDD DDDD</span></div></div>
+    </span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="margin: 0 auto; ">
+      <div class="arrow"><span>Width: 100%, Align: center</span></div>
+    <span>
+      <div class="option margin" style="padding-right: 10px; padding-left: 20px;"><div class="arrow" style="width:20px; top:5px;"><span style="right: auto; top: 10px;">margin: 20px</span></div><div class="content"><span>Option A</span></div></div><!--
+      --><div class="option margin" style="padding: 0 10px;"><div class="content"><span>Option BBBB</span></div></div><!--
+      --><div class="option margin" style="padding: 0 10px;"><div class="content"><span>Option CCCCCCCCC</span></div></div><!--
+      --><div class="option margin" style="padding-left: 10px; padding-right: 20px;"><div class="content"><span>Option DDDDDD DDDD</span></div></div>
+    </span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="margin: 0 auto; ">
+      <div class="arrow"><span>Width: 100%, Align: center</span></div>
+    <span>
+      <div class="option margin" style="padding-right: 20px; padding-left: 20px;"><div class="arrow" style="width:20px; top:5px;"><span style="right: auto; top: 10px;">margin: 20px</span></div><div class="content" style="padding: 0 10px;"><span>Option A</span></div></div><!--
+      --><div class="option margin" style="padding-right: 20px;"><div class="content" style="padding: 0 10px;"><div class="arrow" style="width:10px; top:5px;"><span style="right: auto; top: 10px;">padding: 10px</span></div><span>Option BBBB</span></div></div><!--
+      --><div class="option margin" style="padding-right: 20px;"><div class="content" style="padding: 0 10px;"><span>Option CCCCCCCCC</span></div></div><!--
+      --><div class="option margin" style="padding-right: 20px;"><div class="content"  style="padding: 0 10px;"><span>Option DDDDDD DDDD</span></div></div>
+    </span></div>
+  </div>
+  <hr>
+  <div class="margin">
+    <div class="content" style="margin: 0 auto; ">
+      <div class="arrow"><span>Width: 100%, Align: center</span></div>
+    <span>
+      <div class="option margin" style="padding-right: 20px; padding-left: 20px;"><div class="arrow" style="width:20px; top:5px;"><span style="right: auto; top: 10px;">margin: 20px</span></div><div class="content" style="padding: 0 10px; width: 150px;"><span style="width: 100%;">Option A</span></div></div><!--
+      --><div class="option margin" style="padding-right: 20px;"><div class="content" style="padding: 0 10px; width: 150px;"><div class="arrow" style="width:10px; top:5px;"><span style="right: auto; top: 10px;">padding: 10px</span></div><span style="width: 100%;">Option BBBB</span></div></div><!--
+      --><div class="option margin" style="padding-right: 20px;"><div class="content" style="padding: 0 10px; width: 150px;"><div class="arrow" style="top:20px;"><span style="top: 10px;">Fixed Width: 150px</span></div><span style="width: 100%;">Option CCCCCCCCC</span></div></div><!--
+      --><div class="option margin" style="padding-right: 20px;"><div class="content"  style="padding: 0 10px; width: 150px;"><span style="width: 100%;">Option DDDDDD DDDD</span></div></div>
+    </span></div>
+  </div>
+  <hr>
+</body>
+</html>
