@@ -137,6 +137,12 @@ hr {
 </style>
 </head>
 <body>
+  <div style="position: fixed; top:0; right: 0; z-index: 11;">
+    <button onclick="hide()">Colour off</button>
+    <button onclick="hideAll()">Hints off</button>
+    <button onclick="hideBorder()">Border off</button>
+    <button onclick="show()">Show All</button>
+  </div>
   <h1>H1 Heading 1</h1>
   <h1 style="color: red; font-style:italic;">Heading style base on Heading 1</h1>
   <h2 style="font-size: 32px;">Heading style you thought it base on Heading 1</h2>
@@ -341,7 +347,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     }
     window.hideBorder = function() {
       $('.option .content').css({'border': 'none'});
-
+    }
+    window.show = function() {
+      $('.margin').css({'background-color': '#fad690'});
+      $('.content').css({'background-color': '#a9f1a5'});
+      $('body').css({'background-color': '#eee'});
+      $('.arrow').css({'visibility': 'visible'});
+      $('.option .content').css({'border': '1px #333 solid;'});
     }
   </script>
 </body>
