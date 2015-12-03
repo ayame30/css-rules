@@ -134,7 +134,18 @@ hr {
 </style>
 </head>
 <body>
+  <h1><H1 Heading 1</h1>
+  <h1 style="color: red; font-style:italic;">Heading style base on Heading 1</h1>
+  <h2>H2 Heading 2</h2>
+  <h3>H3 Heading 3</h3>
+  <h4>H4 Heading 4</h4>
+  <h5>H5 Heading 5</h5>
+  <h6>H6 Heading 6</h6>
 
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  <hr>
   <h1>Text section</h1>
   <hr>
   <div class="margin">
@@ -289,6 +300,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       --><div class="option margin" style="padding-right: 20px;"><div class="content"  style="padding: 0 10px; width: 150px;"><span style="width: 100%;">Option DDDDDD DDDD</span></div></div>
     </span></div>
   </div>
+  <hr>
+  <h1>Image Size</h1>
+  <hr>
+  <h2>Original Size: 800 X 600</h2>
+    <img src="img.jpg" /></div>
+  <hr>
+  <h2>width 25% of the div</h2>
+    <div class="margin"><img style="width: 25%;" src="img.jpg" /></div></div>
+  <hr>
+  <h2>Fixed Size: 400 X 400 with position center (no-resize)</h2>
+  <div style="width: 400px; height: 400px; background-image: url(img.jpg); background-position: center; background-repeat: no-repeat;"></div>
+  <hr>
+  <h2>Fixed Size: 400 X 400 with position center (with resize: cover)</h2>
+  <div style="width: 400px; height: 400px; background-size: cover; background-image: url(img.jpg);background-position: center;background-repeat: no-repeat;"></div>
+  <hr>
+  <h2>Fixed Size: 400 X 400 with position center (with resize: contain)</h2>
+  <div style="background-color: #ccc; width: 400px; height: 400px; background-size: contain; background-image: url(img.jpg);background-position: center;background-repeat: no-repeat;"></div>
+  <h2>width 25% of the div, must be square</h2>
+    <div class="margin"><div style="background-color: #ccc; padding-bottom: 25%; width: 25%;positiona: absolute; background-size: cover; background-image: url(img.jpg);background-position: center;background-repeat: no-repeat;"></div></div>
+  <hr>
+  <h2>width 25% of the div, must be 3:2</h2>
+    <div class="margin"><div style="background-color: #ccc; padding-bottom: 16.67%; width: 25%;positiona: absolute; background-size: cover; background-image: url(img.jpg);background-position: center;background-repeat: no-repeat;"></div></div>
   <hr>
 </body>
 </html>
