@@ -1,5 +1,8 @@
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
 <style>
 html {
    margin:0 ;
@@ -134,8 +137,9 @@ hr {
 </style>
 </head>
 <body>
-  <h1><H1 Heading 1</h1>
+  <h1>H1 Heading 1</h1>
   <h1 style="color: red; font-style:italic;">Heading style base on Heading 1</h1>
+  <h2 style="font-size: 32px;">Heading style you thought it base on Heading 1</h2>
   <h2>H2 Heading 2</h2>
   <h3>H3 Heading 3</h3>
   <h4>H4 Heading 4</h4>
@@ -323,5 +327,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <h2>width 25% of the div, must be 3:2</h2>
     <div class="margin"><div style="background-color: #ccc; padding-bottom: 16.67%; width: 25%;positiona: absolute; background-size: cover; background-image: url(img.jpg);background-position: center;background-repeat: no-repeat;"></div></div>
   <hr>
+  <script>
+    window.hide = function(){
+      $('.margin').css({'background-color': 'transparent'});
+      $('.content').css({'background-color': 'transparent'});
+      $('body').css({'background-color': 'transparent'});
+    }
+    window.hideAll = function(){
+      $('.margin').css({'background-color': 'transparent'});
+      $('.content').css({'background-color': 'transparent'});
+      $('body').css({'background-color': 'transparent'});
+      $('.arrow').css({'visibility': 'hidden'});
+    }
+    window.hideBorder = function() {
+      $('.option .content').css({'border': 'none'});
+
+    }
+  </script>
 </body>
 </html>
